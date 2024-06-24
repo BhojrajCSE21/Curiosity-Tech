@@ -31,12 +31,22 @@
 }
 
 .nav-links a {
-    color: #fff;
+    color: #fff; /* Set default color to white for all links */
     text-decoration: none;
     font-size: 26px;
     font-weight: bold;
     position: relative;
     transition: color 0.3s ease;
+}
+
+/* Style for the active link */
+.nav-links a.active {
+    color: #fbfbfb; /* Keep text color white */ /* Set background to purple */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+.nav-links a:hover {
+    color: #00ff57; /* Change color on hover */
 }
 
 .nav-links a:hover {
