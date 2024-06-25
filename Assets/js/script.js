@@ -5,8 +5,24 @@ hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
+// Close hamburger menu on scroll
+window.addEventListener('scroll', () => {
+    navLinks.classList.remove('active');
+});
 
-// script.js
+// Highlight active nav link
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const currentPath = window.location.pathname;
+
+    navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPath) {
+            link.classList.add('active');
+        }
+    });
+});
+
+// Existing count-up script
 document.addEventListener('DOMContentLoaded', function() {
     function countUp(element, start, end, duration) {
         let startTime = null;
