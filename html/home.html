@@ -3,73 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
+
+    <title>CuriosityTech</title>
     <link rel="stylesheet" href="/Assets/css/home.css">
+    <link rel="icon" href="/Assets/images/ctIcon.png" type="image/icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- Navbar Section -->
+<!-- Navbar Section -->
 <nav class="navbar">
     <div class="logo">
-        <a href="#"><img src="https://vdigtech.com/wp-content/uploads/2024/03/cropped-vd-logo-copy.png" alt="Logo"></a>
+        <a href="#"><img src="/Assets/images/IMG-20240621-WA0001.jpg" alt="Logo"></a>
+    </div>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
     <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li class="dropdown">
+        <li data-aos="fade-right" data-aos-offset="120" data-aos-delay="100"><a href="home.html">Home</a></li>
+        <li data-aos="fade-right" data-aos-offset="120" data-aos-delay="200"><a href="about.html">About</a></li>
+        <li class="dropdown" data-aos="fade-right" data-aos-offset="120" data-aos-delay="300">
             <a href="#">Courses</a>
             <ul class="dropdown-menu">
-                <li><a href="#">Courses 1</a></li>
-                <li><a href="#">courses 2</a></li>
+                <li><a href="courses.html">Web Development</a></li>
+                <li><a href="courses.html">App Development</a></li>
+                <li><a href="courses.html">Digital Marketing</a></li>
+                <li><a href="courses.html">Website Maintenance</a></li>
             </ul>
         </li>
-        <li class="dropdown">
+        <li class="dropdown" data-aos="fade-right" data-aos-offset="120" data-aos-delay="400">
             <a href="#">Blogs</a>
         </li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li data-aos="fade-right" data-aos-offset="120" data-aos-delay="500"><a href="contact.html" >Contact Us</a></li>
     </ul>
 </nav>
 
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Best Place for Creative Digital Solutions</h1>
-            <p>Unlock the Power of Web Presence with our Professional Website Designing Service! Elevate Your Online Presence with Stunning Website Designs.</p>
-            <div class="hero-buttons">
-                <a href="#" class="btn">Get Started</a>
-                <a href="#" class="btn">See Pricing</a>
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-bg"></div> <!-- New div for background image -->
+    <div class="hero-content">
+        <div class="hero-heading">
+        <img data-aos="zoom-in" src="/Assets/images/cIcon.png">
+            <h1><div data-aos="fade-right" data-aos-offset="120" data-aos-duration="500" data-aos-once="true">Best   <br> </div>
+            <span>Place for Creative</span><br><i><div data-aos="fade-left" data-aos-offset="120" data-aos-duration="500" data-aos-once="true"> Digital Solutions</div></i></h1>
+        </div>
+        <div class="hero-main">
+            <div class="hero-text-buttons">
+                <div class="hero-paragraph">
+                    <p>Unlock the Power of Web Presence with our<br>
+                     Professional Website Designing Service!<br>
+                     Elevate Your Online Presence with Stunning<br>
+                     Website Designs.</p>
+                </div><hr>
+                <div class="hero-buttons">
+                    <a href="#" class="btn">Get Started</a>
+                    <a href="#" class="btn">See Pricing</a>
+                </div>
+            </div>
+            <div class="hero-image-explore">
+                <img src="/Assets/images/banner_home02-DD9Q8T2.jpg" alt="Right of Paragraph Image" class="paragraph-img">
+                <div class="explore-button">
+                    <a href="#" class="btn">Explore More</a>
+                </div>
             </div>
         </div>
-        <div class="hero-image">
-            <img src="https://vdigtech.com/wp-content/uploads/2024/03/banner_home02-DD9Q8T2.jpg" alt="Hero Image">
-            <div class="explore-button">
-                <a href="#">Explore More <span>↑</span></a>
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
+
+
 
     <!-- Elements Section -->
     <section class="elements">
         <div class="element-box">
-            <img src="https://vdigtech.com/wp-content/uploads/2024/03/person_home02-USU94UZ.png" alt="Person">
-            <div class="stats">
+            <img src="https://vdigtech.com/wp-content/uploads/2024/03/01.png" alt="Box Background" class="bg">
+            <img src="/Assets/images/person_home02-USU94UZ.png" alt="Person" class="person">
+            <div class="stats-container">
                 <div class="stat">
-                    <h3>250</h3>
-                    <p>Projects</p>
+                    <h1 id="projects-count">7000</h1>
+                    <p>Students</p>
                 </div>
+                <hr>
                 <div class="stat">
-                    <h3>125</h3>
-                    <p>Clients</p>
-                </div>
-                <div class="stat">
-                    <h3>25</h3>
+                    <h1 id="clients-count">700</h1>
                     <p>Experts</p>
+                </div>
+                <hr>
+                <div class="stat">
+                    <h1 id="experts-count">50</h1>
+                    <p>Courses</p>
                 </div>
             </div>
         </div>
         <div class="element-content">
-            <h2>Establish Your Business's Online Presence</h2>
-            <p>Improve your business website's online presence with the unique integration of digital marketing features. Show up your online strength to achieve your virtual goal.</p>
+            <img src="https://vdigtech.com/wp-content/uploads/2024/03/2.png" alt="Box Background" class="bg">
+            <h2>Establish Your Business's Online Presence</h2><hr>
+            <p>Improve your business website's online<br>
+                presence with the unique integration of <br>
+                digital marketing features. Show up your <br>
+                online strength to achieve your virtual goal.</p>
         </div>
     </section>
 
@@ -79,54 +113,62 @@
     <h2>Here are Numerous Topics That Will Enhance Your Skills</h2>
     <div class="skills-box">
         <div class="skill">
-            <img src="https://vdigtech.com/wp-content/uploads/2024/03/Bootstrap.png" alt="Bootstrap">
+            <img src="/Assets/images/Bootstrap.png" alt="Bootstrap">
             <p>Bootstrap</p>
         </div>
         <div class="skill">
-            <img src="https://vdigtech.com/wp-content/uploads/2024/03/html-5.png" alt="HTML">
+            <img src="/Assets/images/html-5.png" alt="HTML">
             <p>HTML</p>
         </div>
         <div class="skill">
-            <img src="https://vdigtech.com/wp-content/uploads/2024/03/css-3.png" alt="CSS">
+            <img src="/Assets/images/css-3.png" alt="CSS">
             <p>CSS</p>
         </div>
         <div class="skill">
-            <img src="https://vdigtech.com/wp-content/uploads/2024/03/js.png" alt="JavaScript">
+            <img src="/Assets/images/js.png" alt="JavaScript">
             <p>JavaScript</p>
         </div>
+    </div>
+    <div class="skills-box">
         <div class="skill">
-            <img src="https://vdigtech.com/wp-content/uploads/2024/03/science.png" alt="React">
+            <img src="/Assets/images/science.png" alt="React">
             <p>React</p>
         </div>
         <div class="skill">
             <img src="https://vdigtech.com/wp-content/uploads/2024/03/wordpress.png" alt="WordPress">
             <p>WordPress</p>
         </div>
+    </div>
+
+    <div class="skills-box">
         <div class="skill">
-            <img src="https://vdigtech.com/wp-content/uploads/2024/03/Frame-3.png" alt="PHP">
+            <img src="/Assets/images/wordpress.png" alt="PHP">
             <p>PHP</p>
         </div>
         <div class="skill">
-            <img src="https://vdigtech.com/wp-content/uploads/2024/03/Frame-1-2.png" alt="Node.js">
+            <img src="/Assets/images/Frame-1-2.png" alt="Node.js">
             <p>Node.js</p>
         </div>
         <div class="skill">
-            <img src="https://vdigtech.com/wp-content/uploads/2024/03/Frame-2-1.png" alt="Sass">
+            <img src="/Assets/images/Frame-2-1.png" alt="Sass">
             <p>Sass</p>
         </div>
         <div class="skill">
-            <img src="https://vdigtech.com/wp-content/uploads/2024/03/Frame-3-1.png" alt="Angular">
+            <img src="/Assets/images/Frame-3-1.png" alt="Angular">
             <p>Angular</p>
         </div>
+    </div>
+    <div class="skills-box">
         <div class="skill">
-            <img src="https://vdigtech.com/wp-content/uploads/2024/03/shopify.png" alt="Shopify">
+            <img src="/Assets/images/shopify.png" alt="Shopify">
             <p>Shopify</p>
         </div>
         <div class="skill">
-            <img src="https://vdigtech.com/wp-content/uploads/2024/03/elementor.png" alt="Vue.js">
+            <img src="/Assets/images/Frame-4.png" alt="Vue.js">
             <p>Vue.js</p>
         </div>
     </div>
+    
 </section>
 
 
@@ -138,87 +180,260 @@
     <div class="services-box">
         <div class="service-card">
             <div class="service-header">
-                <img src="https://vdigtech.com/wp-content/uploads/2024/03/development-1.png" alt="Website Development">
-                <a href="#"><span>↑</span></a>
+                <img src="/Assets/images/development-1.png" alt="Website Development">
+                <a href="courses.html"><span>↑</span></a>
             </div>
             <div class="service-info">
                 <h3>Website Development</h3>
             </div>
             <div class="service-footer">
-                <img src="https://vdigtech.com/wp-content/uploads/2024/03/Image-20.jpg" alt="Website Development Large">
+                <img src="/Assets/images/Image-20.jpg" alt="Website Development Large">
             </div>
         </div>
         <div class="service-card">
             <div class="service-header">
-                <img src="https://vdigtech.com/wp-content/uploads/2024/03/XMLID_1809_.png" alt="App Development">
-                <a href="#"><span>↑</span></a>
+                <img src="/Assets/images/XMLID_1809_.png" alt="App Development">
+                <a href="courses.html"><span>↑</span></a>
             </div>
             <div class="service-info">
                 <h3>App Development</h3>
             </div>
             <div class="service-footer">
-                <img src="https://vdigtech.com/wp-content/uploads/2024/03/Image-21.jpg" alt="App Development Large">
+                <img src="/Assets/images/Image-21.jpg" alt="App Development Large">
             </div>
         </div>
         <div class="service-card">
             <div class="service-header">
-                <img src="https://vdigtech.com/wp-content/uploads/2024/03/brainstorming-1.png" alt="Digital Marketing">
-                <a href="#"><span>↑</span></a>
+                <img src="/Assets/images/brainstorming-1.png" alt="Digital Marketing">
+                <a href="courses.html"><span>↑</span></a>
             </div>
             <div class="service-info">
                 <h3>Digital Marketing</h3>
             </div>
             <div class="service-footer">
-                <img src="https://vdigtech.com/wp-content/uploads/2024/03/Image-27.jpg" alt="Digital Marketing Large">
+                <img src="/Assets/images/Image-27.jpg" alt="Digital Marketing Large">
             </div>
         </div>
         <div class="service-card">
             <div class="service-header">
-                <img src="https://vdigtech.com/wp-content/uploads/2024/03/branding-1.png" alt="Website Maintenance">
-                <a href="#"><span>↑</span></a>
+                <img src="/Assets/images/branding-1.png" alt="Website Maintenance">
+                <a href="courses.html"><span>↑</span></a>
             </div>
             <div class="service-info">
-                <h3>Website Maintenance</h3>
+                <h3>Data Science</h3>
             </div>
             <div class="service-footer">
-                <img src="https://vdigtech.com/wp-content/uploads/2024/03/Image-24.jpg" alt="Website Maintenance Large">
+                <img src="/Assets/images/Image-24.jpg" alt="Website Maintenance Large">
             </div>
         </div>
         <div class="service-card">
             <div class="service-header">
-                <img src="https://vdigtech.com/wp-content/uploads/2024/03/Group-1-2.png" alt="Graphic Design">
-                <a href="#"><span>↑</span></a>
+                <img src="/Assets/images/Group-1-2.png" alt="Graphic Design">
+                <a href="courses.html"><span>↑</span></a>
             </div>
             <div class="service-info">
-                <h3>Graphic Design</h3>
+                <h3>Figma User Interface</h3>
             </div>
             <div class="service-footer">
-                <img src="https://vdigtech.com/wp-content/uploads/2024/03/Untitled-design-1.png" alt="Graphic Design Large">
+                <img src="/Assets/images/Untitled-design-1.png" alt="Graphic Design Large">
             </div>
         </div>
         <div class="service-card">
             <div class="service-header">
-                <img src="https://vdigtech.com/wp-content/uploads/2024/03/optimization-1.png" alt="Domain & Hosting">
-                <a href="#"><span>↑</span></a>
+                <img src="/Assets/images/optimization-1.png" alt="Domain & Hosting">
+                <a href="courses.html"><span>↑</span></a>
             </div>
             <div class="service-info">
-                <h3>Domain & Hosting</h3>
+                <h3>Software Testing</h3>
             </div>
             <div class="service-footer">
-                <img src="https://vdigtech.com/wp-content/uploads/2024/03/Untitled-design-2.png" alt="Domain & Hosting Large">
+                <img src="/Assets/images/Untitled-design-2.png" alt="Domain & Hosting Large">
             </div>
         </div>
     </div>
+    <div class="service-buttons">
+        <a href="courses.html" class="btn">View More</a>
+    </div>
 </section>
+
 
 
     <!-- Bar Section -->
     <section class="bar">
         <div class="bar-content">
-            <p>• Creative People • Good Reviews • Awesome Design • Fast Delivery</p>
+            <div class="bar-flex-container">
+                <p><img src="/Assets/images/Vector-2.png" alt="vector" class="vector"> Creative People </p>
+                <p><img src="/Assets/images/Vector-2.png" alt="vector" class="vector"> Good Reviews </p>
+                <p><img src="/Assets/images/Vector-2.png" alt="vector" class="vector"> Awesome Design </p>
+                <p><img src="/Assets/images/Vector-2.png" alt="vector" class="vector"> Fast Delivery</p>
+            </div>
+           
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <div class="container">
+        <h1 style="text-align: center" >Testimonial</h1>
+        <div class="testimonials" id="testimonials">
+            <div class="testimonial-card hvr-float-bounce" data-aos="flip-left" data-aos-offset="20", data-aos-delay="500" data-aos-anchor-placement="top-center" data-aos-once="true">
+                <div class="testimonial-content"> 
+                    <img src="/Assets/images/SagarBokadeProfilePic.jpg" alt="Sagar">
+                    <div class="text-content">
+                        <p><strong>CuriosityTech provided me with the skills I needed to advance in my career. The training was thorough and practical. Highly recommend!</strong></p>
+                        <p>~ Sagar Bokade</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card hvr-float-bounce" data-aos="flip-left" data-aos-offset="20", data-aos-delay="700" data-aos-anchor-placement="top-center" data-aos-once="true">
+                <div class="testimonial-content">
+                    <img src="/Assets/images/bhojraj.jpg" alt="Bhojraj">
+                    <div class="text-content">
+                        <p><strong>The coaching at CuriosityTech is top-notch. The trainers are knowledgeable and always willing to help. 5 stars from me!</strong></p>
+                        <p>~ Bhojraj</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card hvr-float-bounce" data-aos="flip-left" data-aos-offset="20", data-aos-delay="900" data-aos-anchor-placement="top-center" data-aos-once="true">
+                <div class="testimonial-content">
+                    <img src="/Assets/images/Disha.jpg" alt="Disha">
+                    <div class="text-content">
+                        <p><strong>I had a wonderful experience learning at CuriosityTech. The courses are well-structured and the support is fantastic.</strong></p>
+                        <p>~ Disha</p>
+                    </div>    
+                </div>
+            </div>
+            <div class="testimonial-card hvr-float-bounce" data-aos="flip-left" data-aos-offset="20", data-aos-delay="1100" data-aos-anchor-placement="top-center" data-aos-once="true">
+                <div class="testimonial-content">
+                    <img src="/Assets/images/Diksha.jpg" alt="Diksha">
+                    <div class="text-content">
+                        <p><strong>The environment at CuriosityTech is conducive to learning. I gained a lot of practical knowledge that I could apply immediately.</strong></p>
+                        <p>~ Diksha</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card hvr-float-bounce" data-aos="flip-left" data-aos-offset="20", data-aos-delay="1300" data-aos-anchor-placement="top-center" data-aos-once="true">
+                <div class="testimonial-content">
+                    <img src="/Assets/images/Omm.jpg" alt="Omm">
+                    <div class="text-content">
+                        <p><strong>CuriosityTech exceeded my expectations. The hands-on approach and real-world examples were invaluable. 5 stars!</strong></p>
+                        <p>~ Omm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-contact">
+        <div class="faq-section-container" data-aos="zoom-out-right" data-aos-offset="300"  data-aos-easing="ease-in-sine" data-aos-once="true">
+            <div class="faq-section">
+                <h2><img src="/Assets/images/arrow-removebg-preview.png">What we do?</h2>
+                <h3>As a website designer we provide affordable website design services to our clients all over the world with best services. Our services include; small business website design services.</h3>
+            </div>
+            <div class="faq-section">
+                <div class="faq-question"> Define Goals and Requirements</div>
+                <div class="faq-answer">At Grswt, we understand the purpose of the website, its target audience, and the specific goals it needs to achieve. Determine the features, functionality, and content that the website will require for ecommerce website design services.</div>
+            </div>
+            <div class="faq-section">
+                <div class="faq-question"> Research and Planning</div>
+                <div class="faq-answer">Conduct market research to gather insights about the target audience, competitors, and industry trends. Create a sitemap to outline the structure and hierarchy of the website’s pages. Consider the user journey and how visitors will navigate through the site.</div>
+            </div>
+            <div class="faq-section">
+                <div class="faq-question"> User Experience (UX) Design</div>
+                <div class="faq-answer">Focus on designing a user-friendly experience by creating wireframes or prototypes. This involves creating the layout, structure, and functionality of each page, ensuring intuitive navigation and easy access to information.</div>
+            </div>
+            <div class="faq-section">
+                <div class="faq-question"> Testing and Optimization</div>
+                <div class="faq-answer">Conduct thorough testing to identify and fix any issues, such as broken links, browser compatibility problems, or usability concerns. Optimize the website’s performance, including page load times and mobile responsiveness.</div>
+            </div>
+            <div class="faq-section">
+                <div class="faq-question"> Launch and Deployment</div>
+                <div class="faq-answer">Deploy the website on a web hosting platform or server. Ensure proper domain and hosting setup, configure security measures (such as SSL certificates), and monitor the website’s performance.</div>
+            </div>
+        </div>
+        <div class="contact-form hvr-glow" data-aos="zoom-out-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-once="true">
+            <h2>Drop Us a Message</h2>
+            <form action="#" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="course">Interested Course:</label>
+                <input type="text" id="course" name="course" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button class="hvr-buzz-out" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-divider"></div>
+            <div class="footer-right">
+                <div class="footer-content">
+                 <div class="footer-img">
+                    <img src="/Assets/images/IMG-20240621-WA0001.jpg" alt="logo"></div>
+                    <div class="content">
+                    <h3>Embark on a journey of endless possibilities with Curiosity Tech Academy. Uncover your potential, embrace innovation, and shape your future with the power of technology</h3>
+                </div>
+            </div>
+                    <div class="contact-box1">
+                        <div class="contact-box">
+                        <div class="contact-item">
+                            <span>Email:</span> contact@curiositytech.in
+                        </div>
+                        <div class="contact-item">
+                            <span>Mobile:</span> +91-9860555369
+                        </div>
+                        </div>
+                        <div class="contact-item">
+                            <span>Address:</span> 84, Pandurang Gawande Layout, Khamla, Nagpur-25 (IN)
+                        </div>
+                    </div>
+                </div>
+            <div class="footer-divider-vertical"></div>
+            <div class="footer-left">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Courses</h3>
+                    <ul>
+                        <li><a href="#">UI UX / Web Page Design</a></li>
+                        <li><a href="#">Android Application</a></li>
+                        <li><a href="#">Data Science Research</a></li>
+                        <li><a href="#">Data Science Research</a></li>
+                    </ul>
+                </div>
+                <div class="footer-divider"></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© Curiosity Tech 2023. | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> | 
+                <a href="https://www.facebook.com/people/Curiosity-Tech/100095248902197/"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/curiositytechpark?igsh=dHpmeWRveGpjY28w"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/curiosity-tech/"><i class="fa-brands fa-linkedin"></i></a>
+            </p>
+        </div>
+    </footer>
+
     <script src="/Assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
