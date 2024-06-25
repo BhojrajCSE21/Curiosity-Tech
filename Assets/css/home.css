@@ -1,4 +1,6 @@
-/* Navbar Section */
+body{
+    background-color: #F5F7F8;
+}
 /* Navbar Section */
 .navbar {
     display: flex;
@@ -6,7 +8,7 @@
     justify-content: space-between;
     padding: 20px 20px;
     background-color: #f5f7f8;
-    box-shadow: 0 4px 8px rgba(162, 79, 190, 0.495); /* Add drop shadow */
+    box-shadow: 0 4px 8px rgba(165, 155, 168, 0.495); /* Add drop shadow */
 }
 
 .navbar .logo {
@@ -129,7 +131,6 @@
     align-items: center;
     justify-content: center;
     padding: 100px 50px;
-    background-color: #f5f7f8;
 }
 
 .hero-bg {
@@ -138,14 +139,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("https://img.freepik.com/free-photo/aesthetic-minimal-white-grid-pattern-wallpaper_53876-96916.jpg?t=st=1719322188~exp=1719325788~hmac=7614f2c7c61e1c29bce7f56ac4eddf5598ecc2ec0e3511059fb09aa32c734d2c&w=1060");
+    background-image: url("https://img.freepik.com/free-vector/white-rhombus-pattern_1053-249.jpg?t=st=1719333227~exp=1719336827~hmac=25f89d3d9ebfb17b245d52793728f8205536807a2ad97bfcd765940ba050dc59&w=740");
     background-size: cover;
     background-position: center;
     z-index: -1; /* Ensure the background is behind other content */
 }
 
 .hero-content {
-    
     max-width: 70%;
     color: #211951;
     position: relative;
@@ -153,7 +153,7 @@
 }
 
 .hero-heading h1 {
-    font-size: 100px;
+    font-size: 96px;
     margin-bottom: 5px; /* Reduced space between headings */
     font-family: "Inter", Sans-serif;
     line-height: 1.2;
@@ -182,9 +182,11 @@ hr {
 }
 
 .hero-paragraph p {
-    font-size: 20px;
+    font-size: 14px;
+    font-weight: bold;
     margin-bottom: 40px;
     font-family: "Inter", Sans-serif;
+    margin-right: 19px;
 }
 
 .hero-buttons {
@@ -227,7 +229,7 @@ hr {
 .explore-button .btn {
     background-color: #ffffff;
     border-radius: 90%;
-    padding: 56px 33px 60px 33px; /* Padding for the button */
+    padding: 56px 23px 60px 23px; /* Padding for the button */
     margin-left: 25px;/* Space between the image and the explore button */
     font-weight: bold;
     text-transform: uppercase;
@@ -254,16 +256,15 @@ hr {
     padding: 50px 50px;
     gap: 20px;
     justify-content: space-evenly;
-    background-color: #f5f7f8;
+    
 }
 
 .element-box {
-    max-width: 80%;
+    max-width: 40%;
     max-height: 100%;
     position: relative;
     display: flex;
     align-items: center;
-    background-image: url("https://vdigtech.com/wp-content/uploads/2024/03/01.png");
     
 }
 
@@ -271,7 +272,7 @@ hr {
     position: absolute;
     top: 0;
     left: 0;
-    width: 1000px;
+    width: 590px;
     height: 550px;
     object-fit: cover;
     z-index: -1;
@@ -288,7 +289,8 @@ hr {
 
 hr {
     border: 2px solid #000;
-    width: 100%;
+    width: 80%;
+    margin-left: 0;
 }
 
 .stats-container {
@@ -324,7 +326,6 @@ hr {
     margin-right: 10px;
     margin-left: 30px;
     box-shadow: #030303;
-    background-image: url("https://vdigtech.com/wp-content/uploads/2024/03/2.png");
     padding: 15px;
 }
 
@@ -332,8 +333,8 @@ hr {
     position: absolute;
     top: 0;
     left: 0;
-    width: 550px;
-    height: 550px;
+    width: 540px;
+    height: 300px;
     object-fit: cover;
     z-index: -1;
     
@@ -568,6 +569,7 @@ hr {
     width: 25px;
 }
 
+
 /* Footer section */
 .footer {
     background-color: #F5F7F8;
@@ -722,6 +724,7 @@ hr {
 .footer-column ul li a:hover {
     color: #8576FF;
 }
+
 
 
 /* Responsive Styles */
