@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>CuriosityTech</title>
+    <link rel="stylesheet" href="/Assets/css/home.css">
+    <link rel="icon" href="/Assets/images/ctIcon.png" type="image/icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Website</title>
     <link rel="stylesheet" href="/Assets/css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,9 +23,9 @@
         <span></span>
     </div>
     <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li class="dropdown">
+        <li data-aos="fade-right" data-aos-offset="120" data-aos-delay="100"><a href="home.html">Home</a></li>
+        <li data-aos="fade-right" data-aos-offset="120" data-aos-delay="200"><a href="about.html">About</a></li>
+        <li class="dropdown" data-aos="fade-right" data-aos-offset="120" data-aos-delay="300">
             <a href="#">Courses</a>
             <ul class="dropdown-menu">
                 <li><a href="courses.html">Web Development</a></li>
@@ -31,10 +34,10 @@
                 <li><a href="courses.html">Website Maintenance</a></li>
             </ul>
         </li>
-        <li class="dropdown">
+        <li class="dropdown" data-aos="fade-right" data-aos-offset="120" data-aos-delay="400">
             <a href="#">Blogs</a>
         </li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li data-aos="fade-right" data-aos-offset="120" data-aos-delay="500"><a href="contact.html" >Contact Us</a></li>
     </ul>
 </nav>
 
@@ -44,6 +47,9 @@
     <div class="hero-bg"></div> <!-- New div for background image -->
     <div class="hero-content">
         <div class="hero-heading">
+        <img data-aos="zoom-in" src="/Assets/images/cIcon.png">
+            <h1><div data-aos="fade-right" data-aos-offset="120" data-aos-duration="500" data-aos-once="true">Best   <br> </div>
+            <span>Place for Creative</span><br><i><div data-aos="fade-left" data-aos-offset="120" data-aos-duration="500" data-aos-once="true"> Digital Solutions</div></i></h1>
             <h1>Best<br>
             <span>Place for Creative</span><br> Digital Solutions</h1>
         </div>
@@ -267,7 +273,106 @@
            
         </div>
     </section>
-
+    <!-- Contact Section -->
+    <div class="container">
+        <h1 style="text-align: center" >Testimonial</h1>
+        <div class="testimonials" id="testimonials">
+            <div class="testimonial-card hvr-float-bounce" data-aos="flip-left" data-aos-offset="20", data-aos-delay="500" data-aos-anchor-placement="top-center" data-aos-once="true">
+                <div class="testimonial-content"> 
+                    <img src="/Assets/images/SagarBokadeProfilePic.jpg" alt="Sagar">
+                    <div class="text-content">
+                        <p><strong>CuriosityTech provided me with the skills I needed to advance in my career. The training was thorough and practical. Highly recommend!</strong></p>
+                        <p>~ Sagar Bokade</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card hvr-float-bounce" data-aos="flip-left" data-aos-offset="20", data-aos-delay="700" data-aos-anchor-placement="top-center" data-aos-once="true">
+                <div class="testimonial-content">
+                    <img src="/Assets/images/bhojraj.jpg" alt="Bhojraj">
+                    <div class="text-content">
+                        <p><strong>The coaching at CuriosityTech is top-notch. The trainers are knowledgeable and always willing to help. 5 stars from me!</strong></p>
+                        <p>~ Bhojraj</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card hvr-float-bounce" data-aos="flip-left" data-aos-offset="20", data-aos-delay="900" data-aos-anchor-placement="top-center" data-aos-once="true">
+                <div class="testimonial-content">
+                    <img src="/Assets/images/Disha.jpg" alt="Disha">
+                    <div class="text-content">
+                        <p><strong>I had a wonderful experience learning at CuriosityTech. The courses are well-structured and the support is fantastic.</strong></p>
+                        <p>~ Disha</p>
+                    </div>    
+                </div>
+            </div>
+            <div class="testimonial-card hvr-float-bounce" data-aos="flip-left" data-aos-offset="20", data-aos-delay="1100" data-aos-anchor-placement="top-center" data-aos-once="true">
+                <div class="testimonial-content">
+                    <img src="/Assets/images/Diksha.jpg" alt="Diksha">
+                    <div class="text-content">
+                        <p><strong>The environment at CuriosityTech is conducive to learning. I gained a lot of practical knowledge that I could apply immediately.</strong></p>
+                        <p>~ Diksha</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card hvr-float-bounce" data-aos="flip-left" data-aos-offset="20", data-aos-delay="1300" data-aos-anchor-placement="top-center" data-aos-once="true">
+                <div class="testimonial-content">
+                    <img src="/Assets/images/Omm.jpg" alt="Omm">
+                    <div class="text-content">
+                        <p><strong>CuriosityTech exceeded my expectations. The hands-on approach and real-world examples were invaluable. 5 stars!</strong></p>
+                        <p>~ Omm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-contact">
+        <div class="faq-section-container" data-aos="zoom-out-right" data-aos-offset="300"  data-aos-easing="ease-in-sine" data-aos-once="true">
+            <div class="faq-section">
+                <h2><img src="/Assets/images/arrow-removebg-preview.png">What we do?</h2>
+                <h3>As a website designer we provide affordable website design services to our clients all over the world with best services. Our services include; small business website design services.</h3>
+            </div>
+            <div class="faq-section">
+                <div class="faq-question"> Define Goals and Requirements</div>
+                <div class="faq-answer">At Grswt, we understand the purpose of the website, its target audience, and the specific goals it needs to achieve. Determine the features, functionality, and content that the website will require for ecommerce website design services.</div>
+            </div>
+            <div class="faq-section">
+                <div class="faq-question"> Research and Planning</div>
+                <div class="faq-answer">Conduct market research to gather insights about the target audience, competitors, and industry trends. Create a sitemap to outline the structure and hierarchy of the website’s pages. Consider the user journey and how visitors will navigate through the site.</div>
+            </div>
+            <div class="faq-section">
+                <div class="faq-question"> User Experience (UX) Design</div>
+                <div class="faq-answer">Focus on designing a user-friendly experience by creating wireframes or prototypes. This involves creating the layout, structure, and functionality of each page, ensuring intuitive navigation and easy access to information.</div>
+            </div>
+            <div class="faq-section">
+                <div class="faq-question"> Testing and Optimization</div>
+                <div class="faq-answer">Conduct thorough testing to identify and fix any issues, such as broken links, browser compatibility problems, or usability concerns. Optimize the website’s performance, including page load times and mobile responsiveness.</div>
+            </div>
+            <div class="faq-section">
+                <div class="faq-question"> Launch and Deployment</div>
+                <div class="faq-answer">Deploy the website on a web hosting platform or server. Ensure proper domain and hosting setup, configure security measures (such as SSL certificates), and monitor the website’s performance.</div>
+            </div>
+        </div>
+        <div class="contact-form hvr-glow" data-aos="zoom-out-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-once="true">
+            <h2>Drop Us a Message</h2>
+            <form action="#" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="course">Interested Course:</label>
+                <input type="text" id="course" name="course" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button class="hvr-buzz-out" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
     <!-- Footer Section -->
     <footer class="footer">
         <div class="footer-container">
@@ -327,5 +432,9 @@
     </footer>
 
     <script src="/Assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CuriosityTech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/Assets/css/contact.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="/Assets/images/IMG-20240621-WA0001.jpg" alt="Logo"></a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#">Courses</a>
+                <ul class="dropdown-menu">
+                    <li><a href="courses.html">Web Development</a></li>
+                    <li><a href="courses.html">App Development</a></li>
+                    <li><a href="courses.html">Digital Marketing</a></li>
+                    <li><a href="courses.html">Website Maintenance</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Blogs</a>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        
+        <div class="image" id="image">
+        </div>
+    </div>
+
+    <div class="container-contact">
+        <div class="faq-section-container" data-aos="zoom-out-right" data-aos-offset="300"  data-aos-easing="ease-in-sine" data-aos-once="true">
+            <div class="faq-section">
+                <h1>Feel Free To Contact Us <br>Anytime  <img src="/Assets/images/handshake.gif"></h1>
+                <p>Unlock Lifetime Access to Expert-Led Online Courses, designed for continuous learning at your convenience. Our team is here to support you—feel free to contact us anytime with questions or for assistance!</p>
+            </div>
+            <div class="address">
+                <div class="faq-question"> <h2>INDIA</h2></div>
+                <p><img src="/Assets/images/location_on_40dp_FILL0_wght400_GRAD0_opsz40.png"><a href="https://maps.app.goo.gl/5jVEQQ5U94M2a9zN6">    84, Pandurang Layout Khamla, Nagpur 440025</a></p>
+                <p><img src="/Assets/images/mail_40dp_FILL0_wght400_GRAD0_opsz40.png"><a href="#">   contact@curiositytech.in</a></p>
+                <p><img src="/Assets/images/phone_in_talk_40dp_FILL0_wght400_GRAD0_opsz40.png"><a href="#">  +91 9860555369</a></p>
+            </div>
+        </div>
+        <div class="contact-form hvr-glow" data-aos="zoom-out-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-once="true">
+            <h2>Drop Us a Message</h2>
+            <form action="#" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="course">Interested Course:</label>
+                <input type="text" id="course" name="course" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button class="hvr-buzz-out" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
