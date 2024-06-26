@@ -123,6 +123,49 @@ body{
     color: #8576FF; /* Purple color for active tab */
 }
 
+/* Display hamburger menu in mobile view */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 0; /* Reset gap for mobile view */
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #f5f7f8;
+        box-shadow: 0 4px 8px rgba(165, 155, 168, 0.495);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        padding: 15px 0;
+        width: 100%;
+        display: block;
+    }
+
+    .nav-links .dropdown-menu {
+        position: static;
+        background-color: #f5f7f8;
+    }
+
+    .nav-links .dropdown-menu li {
+        padding: 10px;
+    }
+}
+
 
 .main-content {
     max-width: 1200px;
@@ -133,7 +176,7 @@ body{
 
 /* Hero Section */
 .hero {
-    background-color: #F5F7F8; /* Background color */
+     /* Background color */
     background-size: cover;
     background-position: center;
     display: flex; /* Ensure flexbox layout */
@@ -149,6 +192,9 @@ body{
     font-size:7em;
     line-height:1;
     margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://img.freepik.com/free-vector/white-rhombus-pattern_1053-249.jpg?t=st=1719333227~exp=1719336827~hmac=25f89d3d9ebfb17b245d52793728f8205536807a2ad97bfcd765940ba050dc59&w=740");
 }
 
 .inline-content {
@@ -191,6 +237,9 @@ body{
 
 
 @media (max-width: 768px) {
+    .main-content{
+        margin-top: 190px;
+    }
     .hero {
         flex-direction: column;
         text-align: center;
@@ -250,6 +299,10 @@ body{
 }
 
 @media (max-width: 480px) {
+
+    .main-content{
+        margin-top: 190px;
+    }
     .hero-content h1 {
         font-size: 3em;
         text-align: center;
