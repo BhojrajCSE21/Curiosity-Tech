@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
 const testimonials = document.getElementById('testimonials');
         let isHovered = false;
         let scrollInterval;
