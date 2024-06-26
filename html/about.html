@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CuriosityTech</title>
-        <link rel="stylesheet" href="/Assets/css/about.css">
-        <link rel="icon" href="/Assets/images/IMG-20240621-WA0000.jpg" type="image/icon">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <title>Website</title>
-        <link rel="stylesheet" href="/Assets/css/about.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="/Assets/css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 <body>
+ 
 
     <!-- Navbar Section -->
-<nav class="navbar">
-    <div class="logo">
-        <a href="#"><img src="/Assets/images/IMG-20240621-WA0001.jpg" alt="Logo"></a>
+    <nav class="navbar">
+        <div class="logo">
+        <a href="home.html"><img src="/Assets/images/IMG-20240621-WA0001.jpg" alt="Logo"></a>
     </div>
     <div class="hamburger">
         <span></span>
@@ -24,9 +21,9 @@
         <span></span>
     </div>
     <ul class="nav-links">
-        <li data-aos="fade-right" data-aos-offset="120" data-aos-delay="100"><a href="home.html">Home</a></li>
-        <li data-aos="fade-right" data-aos-offset="120" data-aos-delay="200"><a href="about.html">About</a></li>
-        <li class="dropdown" data-aos="fade-right" data-aos-offset="120" data-aos-delay="300">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
             <a href="courses.html">Courses</a>
             <ul class="dropdown-menu">
                 <li><a href="courses.html">Web Development</a></li>
@@ -35,22 +32,21 @@
                 <li><a href="courses.html">Website Maintenance</a></li>
             </ul>
         </li>
-        <li class="dropdown" data-aos="fade-right" data-aos-offset="120" data-aos-delay="400">
+        <li class="dropdown">
             <a href="#">Blogs</a>
         </li>
-        <li data-aos="fade-right" data-aos-offset="120" data-aos-delay="500"><a href="contact.html" >Contact Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
     </ul>
 </nav>
-
-    <div class="main-content">
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-bg"></div>
         <div class="hero-content">
             <h1>CuriosityTech<span class="inline-content">at a <img src="/Assets/images/banner_about.jpg" alt="person"> <img src="/Assets/images/banner_about2.jpg" alt="person"></span>glance</h1>
             <p>Know your trusted source of services, and build your empire with top-class intergration</p>
         </div>
     </section>
-
+    <div class="main-content">
     <!-- Detail1 Section -->
     <section class="detail1">
         <div class="detail1-box">
@@ -225,7 +221,9 @@
     </div>
 </footer>
 </div>
-    <script src="/Assets/js/nav.js"></script>
 
+
+<script src="/Assets/js/nav.js"></script>
+<script src="/Assets/js/script.js"></script>
 </body>
 </html>

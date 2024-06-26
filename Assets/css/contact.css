@@ -171,26 +171,27 @@ body {
     }
 }
 
-        /** Navbar End **/
-
+/* Contact page */
 .container {
     width: 100%;
-    margin: 0;
     background-color: #F5F7F8;
     box-sizing: border-box;
+    max-width: 40%;
 }
 .image {
-    display: flex;
-    overflow: hidden;
-    white-space: nowrap;
     width: 100%;
-    height: 370px;
-    margin: 0;
+    height: 500px;
+    margin: 20px 150px;
     position: relative;
-    box-shadow: 0 15px 8px #8b8b8b84;
-    background-image: linear-gradient(rgba(35, 35, 35, 0.708),rgba(177, 177, 177, 0.208),rgba(35, 35, 35, 0.708)), url("/Assets/images/contact us.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("/Assets/images/Social networking-cuate.svg");
+    background-repeat: no-repeat
+}
+.container h1{
+    color: #8576FF;
+    font-size: 90px;
+    position: relative;
+    top: 150px;
+    left: 650px;
 }
 
 /* _________________________HOVER EFFECT START______________________________*/
@@ -342,6 +343,7 @@ body {
 .faq-section {
     margin-bottom: 20px;
     padding: 0px;
+    padding-top: 60px;
 }
 
 .faq-question {
@@ -379,13 +381,14 @@ body {
     background-color: #8576FF;
     border-radius: 50px;
     color: #ffffff;
+    font-size: 20px;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 90%;
     padding: 15px 10px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     margin-right: 30px;
     margin-bottom: 10px;
     background-color: transparent;
@@ -393,6 +396,7 @@ body {
     border-bottom: 1px solid #211951; 
     font-size: 16px;
     outline: none;
+    color: white;
 }
 
 .contact-form button {
@@ -413,7 +417,7 @@ body {
     height: 40px;
 }
 .contact-form:hover{
-    box-shadow: 0 0 50px #21195184;
+    box-shadow: 0 0 50px #2600ff90;
 }
 .address img{
     width: 30px;
@@ -423,6 +427,372 @@ body {
     color: #21195184;
     text-decoration: none;
 }
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%;
+        text-align: center; /* Center the text inside the container */
+    }
+    .image {
+        margin: 20px;
+        height: 300px;
+        background-position: center;
+    }
+    .container h1 {
+        font-size: 40px;
+        top: 10px; /* Adjusted position */
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+    }
+    .container-contact {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px; /* Add padding for better spacing */
+    }
+    .faq-section-container, 
+    .contact-form {
+        width: 90%;
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px; /* Add padding for better spacing */
+    }
+    .contact-form {
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 10px; /* Adjust padding */
+    }
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+    .contact-form button {
+        width: 100%;
+    }
+    .faq-question,
+    .faq-answer {
+        font-size: 0.9em;
+    }
+}
+
+
+/* Footer section */
+/*wrapper*/
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0 20px; 
+    background-color:#F5F7F8;
+}
+
+.footer {
+    background-color: #F5F7F8;
+    color: #8576FF;
+    padding: 40px 20px;
+    font-family: 'Inter', sans-serif; /* Change font family */
+    position: relative; /* Position relative for absolute positioning */
+}
+
+.footer-divider {
+    position: absolute;
+    top: -1px; /* Position above the footer */
+    right: 0;
+    left: 0;
+    height: 1px; /* Height of the divider */
+    background-color: #8576FF; /* Divider color */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items vertically top */
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px; /* Reduce the gap between sections */
+    position: relative; /* Position relative for absolute positioning */
+}
+.footer-divider-vertical {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: calc(29% - 1px); /* Position at the end of the left column */
+    width: 1px; /* Width of the divider */
+    background-color: #8576FF; /* Divider color */
+}
+.footer-right {
+    flex:2.9; /* Right content covers 3/4 of the container */
+}
+
+.footer-left {
+    flex: 1.1; /* Left content covers 1/4 of the container */
+    display: flex; /* Display columns side by side */
+    gap: 20px; /* Gap between columns */
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+.footer-img {
+    margin-right: 20px; /* Space between image and content */
+}
+.footer-img img {
+    width: 100px; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right:3px; /* Space between image and content */
+}
+
+.content {
+    flex: 1; /* Take remaining space */
+}
+.content h3 {
+    font-size: 24px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    line-height: 1.2; /* Adjust line height */
+    text-wrap: left;
+}
+
+.contact-box {
+    display: flex;
+    gap: 20px; /* Space between contact items */
+    margin:10px;
+}
+.contact-box1 {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column; 
+    margin-top: 20px;
+    margin-left: 20px; 
+    margin-bottom: 20px; 
+}
+
+.contact-item {
+    background-color: #fcfcfd;
+    color: #333;
+    padding: 10px 20px;
+    border: 2px solid #8576ff;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /* Prevent text from wrapping */
+    transition: background-color 0.3s;
+}
+
+.contact-item span {
+    font-weight: bold;
+    margin-right: 5px; /* Space between label and content */
+}
+
+.contact-item:hover {
+    background-color: #8576ff;
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #211951;
+}
+.footer-bottom i{
+    color: #8576FF; 
+    margin:5px;
+    font-size: larger;
+}
+
+.footer-bottom a {
+    color: #211951;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #8576ff;
+    text-decoration: underline;
+}
+.footer-column {
+    flex: 1; /* Each column takes equal space */
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Arrange items in column direction */
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    display: block; /* Ensure each item is displayed as a block element */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.footer-column ul li a {
+    color: #211951;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: block; /* Ensure each link is displayed as a block element */
+}
+
+.footer-column ul li a:hover {
+    color: #8576FF;
+}
+
+/* Media Queries */
+
+@media (min-width: 1300) {
+    .container{
+        width: auto;
+    }
+    .faq-section-container, .contact-section-container {
+        width: 100%;
+    }
+    .container-contact {
+        flex-direction: column;
+        width: 100%;
+    }
+    .contact-form {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 90px;
+    }
+    .faq-section-container {
+        width: 75%;
+        margin-left: 0;
+        margin-top: 70px;
+        padding-left: 70px;
+    }
+}
+@media (max-width: 1350px) {
+    .testimonials {
+        flex-direction: row;
+        align-items: center;
+        display:flex;
+        margin: 0px 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-radius: 0;
+        width: 100%;
+    }
+    .testimonial-card {
+        flex: 0 0 100%;
+        margin: 10px 0;
+        width: 40%;
+        margin-right: 30px;
+    }
+    .container-contact {
+        flex-direction: column;
+        width: 120%;
+        margin: 0px;
+    }
+    .contact-form {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 90px;
+    }
+    .faq-section-container {
+        width: 80%;
+        margin-left: 20px;
+        margin-top: 70px;
+        padding-left: 70px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-divider-vertical {
+        display: none;
+    }
+
+    .footer-right, .footer-left {
+        flex: 1;
+        width: 100%;
+    }
+
+    .contact-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-box1 {
+        margin-left: 0;
+    }
+
+    .content h3, .footer-column h3 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 15px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .footer-img img {
+        width: 80px;
+    }
+
+    .contact-item {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .content h3, .footer-column h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer-content {
+        align-items: center;
+    }
+
+    .footer-img img {
+        width: 60px;
+    }
+
+    .contact-item {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .content h3, .footer-column h3 {
+        font-size: 18px;
+    }
+
+    .footer-bottom {
+        padding: 5px;
+    }
+
+    .footer-bottom i {
+        font-size: medium;
+    }
+}
+
+
 
 @media (min-width: 1300) {
     .faq-section-container, .contact-section-container {
@@ -443,9 +813,13 @@ body {
         margin-top: 70px;
         padding-left: 70px;
     }
-    .container{
-        display: flex;
+    .image {
         width: 100%;
+        height: 20px;
+        margin: 20px 150px;
+        position: absolute;
+        background-image: url("/Assets/images/Social networking-cuate.svg");
+        background-repeat: no-repeat
     }
 }
 @media (max-width: 1350px) {
