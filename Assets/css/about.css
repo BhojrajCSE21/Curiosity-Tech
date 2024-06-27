@@ -6,10 +6,10 @@ body{
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 20px;
-    background-color: #f5f7f8;
-    box-shadow: 0 4px 8px rgba(165, 155, 168, 0.495); /* Add drop shadow */
+    justify-content: space-around;
+    /* padding: 20px 0px; */
+    background-color: #F5F7F8;
+    box-shadow: 0 4px 8px rgba(165, 155, 168, 0.495); 
 }
 
 .navbar .logo {
@@ -17,14 +17,14 @@ body{
 }
 
 .navbar .logo img {
-    width: 114px;
+    width: 130px;
     margin-left: 155px;
 }
 
 .nav-links {
     flex: 2;
     display: flex;
-    gap: 50px;
+    gap: 60px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -38,8 +38,8 @@ body{
 .nav-links a {
     color: #211951;
     text-decoration: none;
-    font-size: 26px;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: 400;
     position: relative;
     transition: color 0.3s ease;
     font-family: "Inter", Sans-serif;
@@ -168,6 +168,7 @@ body{
 }
 
 
+
 /* Hero Section */
 .hero {
     background-image: url("https://img.freepik.com/free-vector/white-rhombus-pattern_1053-249.jpg?t=st=1719333227~exp=1719336827~hmac=25f89d3d9ebfb17b245d52793728f8205536807a2ad97bfcd765940ba050dc59&w=740");
@@ -239,9 +240,10 @@ body{
 
 .hero-content p {
     background-color:transparent;
-    font-size:2em;
+    font-size:1.5em;
     margin-bottom:1rem;
     text-align: center;
+    font-weight:lighter;
 }
 
 

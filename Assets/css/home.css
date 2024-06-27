@@ -1,14 +1,19 @@
 body{
     background-color: #F5F7F8;
+    font-family: 'Inter';
+    max-width: 100vw;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 /* Navbar Section */
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 20px;
-    background-color: #f5f7f8;
-    box-shadow: 0 4px 8px rgba(165, 155, 168, 0.495); /* Add drop shadow */
+    justify-content: space-around;
+    /* padding: 20px 0px; */
+    background-color: #F5F7F8;
+    box-shadow: 0 4px 8px rgba(165, 155, 168, 0.495); 
 }
 
 .navbar .logo {
@@ -16,14 +21,14 @@ body{
 }
 
 .navbar .logo img {
-    width: 114px;
+    width: 130px;
     margin-left: 155px;
 }
 
 .nav-links {
     flex: 2;
     display: flex;
-    gap: 50px;
+    gap: 60px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -37,8 +42,8 @@ body{
 .nav-links a {
     color: #211951;
     text-decoration: none;
-    font-size: 26px;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: 400;
     position: relative;
     transition: color 0.3s ease;
     font-family: "Inter", Sans-serif;
@@ -174,6 +179,9 @@ body{
     align-items: center;
     justify-content: center;
     padding: 100px 50px;
+    /* width: 95vw; */
+    overflow-x:hidden;
+    /* background-color: #E2BBE9; */
 }
 
 .hero-bg {
@@ -182,14 +190,14 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("https://img.freepik.com/free-vector/white-rhombus-pattern_1053-249.jpg?t=st=1719333227~exp=1719336827~hmac=25f89d3d9ebfb17b245d52793728f8205536807a2ad97bfcd765940ba050dc59&w=740");
-    background-size: cover;
-    background-position: center;
+    /* background: */
+    /* linear-gradient(to top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 70%, rgba(0,0,0,0.3) 100%),
+    url('/Assets//images/white.avif') center center/cover no-repeat; */
     z-index: -1; /* Ensure the background is behind other content */
 }
 
 .hero-content {
-    max-width: 70%;
+    max-width: 100%;
     color: #211951;
     position: relative;
     z-index: 1; /* Ensure the content is above the background */
@@ -201,15 +209,18 @@ body{
     margin-top: 0px;
     font-family: "Inter", Sans-serif;
     line-height: 1.2;
+    /* color: transparent;
+    -webkit-text-stroke: 2px #211951; */
 }
 
 .hero-heading h1 span {
-    color: transparent; /* Make the text transparent */
-    -webkit-text-stroke: 2px #211951; /* Add a border to the text */
+    color: transparent; 
+    -webkit-text-stroke: 2px #211951; 
+    color: #8576FF;
 }
 
 hr {
-    border: 2px solid #000;
+    border: 1px solid #000;
     width: 100%;
     margin-bottom: 30px;
 }
@@ -217,23 +228,25 @@ hr {
 .hero-main {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 20px;
 }
 .hero-heading img{
     position: absolute;
-    right: 200px;
+    right: 0px;
 }
 .hero-text-buttons {
     max-width: 60%;
 }
 
 .hero-paragraph p {
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    margin-right: 50px;
+    /* margin-top: 25px; */
+    line-height: 25px;
     font-family: "Inter", Sans-serif;
-    margin-right: 19px;
 }
 
 .hero-buttons {
@@ -247,12 +260,12 @@ hr {
     color: #000;
     padding: 10px 20px;
     border-radius: 5px;
-    font-weight: bold;
+    font-weight: 500;
     text-transform: uppercase;
     cursor: pointer;
     text-decoration: none; /* Ensure buttons are styled as links */
     font-family: "Inter", Sans-serif;
-    border: 2px solid #000;
+    border: 1px solid #000;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Add transition for hover effect */
 }
 
@@ -265,7 +278,7 @@ hr {
 .hero-image-explore {
     display: flex;
     align-items: center;
-    margin-left: 35px;
+    /* margin-left: 35px; */
 }
 
 .paragraph-img {
@@ -273,10 +286,12 @@ hr {
     height: 300px;
 }
 
+
+
 .explore-button .btn {
     background-color: #ffffff;
-    border-radius: 90%;
-    padding: 56px 23px 60px 23px; /* Padding for the button */
+    border-radius: 50%;
+    padding: 14px 23px 60px 23px; 
     margin-left: 25px;/* Space between the image and the explore button */
     font-weight: bold;
     text-transform: uppercase;
@@ -286,6 +301,10 @@ hr {
     border: 2px solid #000;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     display: inline-block;
+}
+
+#hero-explore{
+    margin-top: 10px;
 }
 
 .explore-button .btn:hover {
@@ -362,9 +381,10 @@ hr {
     display: flex;
     align-items: center;
     margin-right: 0;
-    padding: 50px 50px;
-    gap: 20px;
-    justify-content: space-evenly;
+    padding: 50px 200px;
+    padding-right: 40px;
+    gap: 0px;
+    justify-content: space-between;
     
 }
 
@@ -380,12 +400,11 @@ hr {
 .element-box img.bg {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 590px;
+    left: 180px;
+    width: 490px;
     height: 550px;
     object-fit: cover;
     z-index: -1;
-    
 }
 
 .element-box img.person {
@@ -397,7 +416,7 @@ hr {
 }
 
 hr {
-    border: 2px solid #000;
+    border: 1px solid #000;
     width: 80%;
     margin-left: 0;
 }
@@ -406,7 +425,7 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 30px;
+    margin-left: -30px;
 }
 
 .stat {
@@ -460,7 +479,12 @@ hr {
 .element-content p {
     font-size: 18px;
     z-index: 1;
+    line-height: 30px;
     font-family: "Inter", Sans-serif;
+}
+#explore-para{
+    font-weight: 600;
+    color: #8576FF;
 }
 /* Media Queries */
 @media (max-width: 768px) {
@@ -531,6 +555,7 @@ hr {
     .element-content p {
         font-size: 16px;
     }
+    
 }
 
 
@@ -538,7 +563,7 @@ hr {
 /* Skills Section */
 .skills {
     padding: 100px 50px;
-    background-color: #f5f7f8;
+    background-color: #e6e5ff;
     color: #fff;
     text-align: center;
 }
@@ -547,24 +572,25 @@ hr {
     font-size: 36px;
     margin-bottom: 50px;
     color: #000;
+    font-weight: 300;
     font-family: "Inter", Sans-serif;
 }
 
 .skills-box {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 60px;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
 .skill {
     background-color: #fffdfd;
     color: #040404;
-    padding: 20px;
+    padding: 10px;
     border-radius: 50px;
     text-align: left;
-    width: 250px;
+    width: 220px;
     display: flex;
     align-items: center;
     box-shadow: 0 4px 8px rgba(179, 102, 223, 0.938);
@@ -572,16 +598,16 @@ hr {
 }
 
 .skill img {
-    width: 50px;
-    margin-right: 10px;
+    width: 40px;
+    margin-right: 20px;
     margin-left: 35px;
 }
 
 .skill p {
     margin: 0;
-    font-weight: bold;
+    font-weight: 400;
     flex: 1;
-    font-size: 25px;
+    font-size: 20px;
     color: #000000;
     font-family: "Inter", Sans-serif;
 }
@@ -590,7 +616,7 @@ hr {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(214, 122, 223, 0.459);
     background-color: #8576FF; /* Purple background on hover */
-    border-color: #8576FF; 
+    border-color: #ffffff; 
 
 }
 
@@ -601,7 +627,7 @@ hr {
 
 /* Services Section */
 .services {
-    padding: 100px 50px;
+    padding: 50px 50px;
     background-color: #f5f7f8;
     color: #fff;
     text-align: center;
@@ -617,6 +643,7 @@ hr {
 .services p {
     font-size: 20px;
     margin-bottom: 50px;
+    line-height: 30px;
     color: #211951;
     font-family: "Inter", Sans-serif;
 }
@@ -624,7 +651,7 @@ hr {
 .services-box {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 60px;
     justify-content: center;
 }
 
@@ -676,8 +703,9 @@ hr {
 }
 
 .service-info h3 {
-    font-size: 24px;
+    font-size: 20px;
     margin: 0;
+    font-weight: 400;
     font-family: "Inter", Sans-serif;
 }
 
@@ -703,12 +731,12 @@ hr {
     color: #000;
     padding: 10px 20px;
     border-radius: 5px;
-    font-weight: bold;
+    font-weight: 500;
     text-transform: uppercase;
     cursor: pointer;
     text-decoration: none; /* Ensure buttons are styled as links */
     font-family: "Inter", Sans-serif;
-    border: 2px solid #000;
+    border: 1px solid #000;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Add transition for hover effect */
 }
 
@@ -718,9 +746,16 @@ hr {
     border-color: #8576FF; /* Purple border on hover */
 }
 
+#skill-headline{
+    color: #8576FF;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
 
 /* Bar Section */
 .bar {
+    margin-top: 100px;
     background-color: #8576FF;
     color: #211951;
     padding: 20px;
@@ -777,11 +812,12 @@ hr {
 /* Contact Section */
 .container h2{
     font-size: 40px;
-    margin-bottom: 20px;
+    margin-top: 90px;
+    margin-bottom: 0px;
     color: #8756FF;
     font-family: "Inter", Sans-serif;
     text-align: center;
-
+    background-color: #e6e5ff;
 }
 
 .content {
@@ -792,6 +828,7 @@ hr {
     font-weight: bold; /* Make text bold */
     line-height: 1.2; /* Adjust line height */
     text-wrap: left;
+    /* background-color: #e6e5ff; */
 }
 
 .contact-box {
@@ -810,7 +847,7 @@ hr {
 }
 
 .contact-item {
-    background-color: #fcfcfd;
+    background-color: #e6e5ff;
     color: #333;
     padding: 10px 20px;
     border: 2px solid #8576ff;
@@ -833,7 +870,7 @@ hr {
     color: #fff;
 }
 .container{
-    background-color: #dddcff;
+    background-color: #e6e5ff;
     padding-top: 20px;
 }
 .container h5{
@@ -848,13 +885,15 @@ hr {
 .container h4{
     font-size: 20px;
     text-align: center;
-    background-color: #dddcff;
+    font-weight: 400;
+    /* background-color: #e6e5ff; */
 }
 .container h1{
     font-size: 50px;
-    padding-top: 0px;
+    font-weight: 600;
     color: #211951;
-    background-color: #dddcff;
+    line-height: 0;
+    /* background-color: #e6e5ff; */
 }
 .testimonials {
     display: flex;
@@ -864,7 +903,7 @@ hr {
     position: relative;
     padding-top: 90px;
     padding-bottom: 120px;
-    background-color: #dddcff;
+    background-color: #e6e5ff;
     padding-left: 150px;
 }
 .testimonial-card {
@@ -1161,6 +1200,7 @@ hr {
 }
 .faq-section h3{
     color: #211951;
+    font-weight: 300;
 }
 
 .faq-section {
