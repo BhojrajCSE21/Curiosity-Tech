@@ -1,3 +1,159 @@
+/* body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, #d8d2ff, #AD88C6, #FFE6E6, #E1AFD1);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+} */
+
+
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    background: #bab1ff;
+    animation: ripple 15s infinite;
+    box-shadow: 0px 0px 1px 0px #508fb9;
+  }
+  
+  .small{
+    width: 200px;
+    height: 200px;
+    left: -100px;
+    bottom: -100px;
+  }
+  
+  .medium{
+    width: 400px;
+    height: 400px;
+    left: -200px;
+    bottom: -200px;
+  }
+  
+  .large{
+    width: 600px;
+    height: 600px;
+    left: -300px;
+    bottom: -300px;
+  }
+  
+  .xlarge{
+    width: 800px;
+    height: 800px;
+    left: -400px;
+    bottom: -400px;
+  }
+  
+  .xxlarge{
+    width: 1000px;
+    height: 1000px;
+    left: -500px;
+    bottom: -500px;
+  }
+  
+  .shade1{
+    opacity: 0.2;
+  }
+  .shade2{
+    opacity: 0.5;
+  }
+  
+  .shade3{
+    opacity: 0.7;
+  }
+  
+  .shade4{
+    opacity: 0.8;
+  }
+  
+  .shade5{
+    opacity: 0.9;
+  }
+  
+  @keyframes ripple{
+    0%{
+      transform: scale(0.8);
+    }
+    
+    50%{
+      transform: scale(1.2);
+    }
+    
+    100%{
+      transform: scale(0.8);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
 body{
     background-color: #F5F7F8;
     font-family: 'Inter';
@@ -6,6 +162,7 @@ body{
     margin: 0;
     box-sizing: border-box;
 }
+
 /* Navbar Section */
 .navbar {
     display: flex;
@@ -21,8 +178,9 @@ body{
 }
 
 .navbar .logo img {
-    width: 130px;
+    width: 160px;
     margin-left: 155px;
+    margin-top: 15px;
 }
 
 .nav-links {
@@ -79,13 +237,15 @@ body{
     overflow: hidden;
     list-style: none; /* Remove list dots */
     padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
+  margin: 0;
     white-space: nowrap; /* Prevent line break */
 }
 
 .nav-links .dropdown-menu li {
     display: block; /* Display list items in a block */
-    padding: 10px;
+    /* padding: 10px; */
+    margin-top: 0.7rem;
+    padding: 10px 1.3rem;
     font-family: "Inter", Sans-serif;
 }
 
@@ -179,7 +339,6 @@ body{
     align-items: center;
     justify-content: center;
     padding: 100px 50px;
-    /* width: 95vw; */
     overflow-x:hidden;
     /* background-color: #E2BBE9; */
 }
@@ -190,9 +349,6 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: */
-    /* linear-gradient(to top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 70%, rgba(0,0,0,0.3) 100%),
-    url('/Assets//images/white.avif') center center/cover no-repeat; */
     z-index: -1; /* Ensure the background is behind other content */
 }
 
@@ -257,7 +413,7 @@ hr {
 
 .hero-buttons .btn {
     background-color: #ffffff;
-    color: #000;
+    color: #8576FF;
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: 500;
@@ -265,7 +421,7 @@ hr {
     cursor: pointer;
     text-decoration: none; /* Ensure buttons are styled as links */
     font-family: "Inter", Sans-serif;
-    border: 1px solid #000;
+    border: 1px solid #8576FF;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Add transition for hover effect */
 }
 
@@ -558,7 +714,14 @@ hr {
     
 }
 
+#btn-explore{
+    background-color: #8576FF;
+    color: white;
+}
 
+#btn-explore:hover{
+    background-color: #6652ff;
+}
 
 /* Skills Section */
 .skills {
@@ -570,7 +733,7 @@ hr {
 
 .skills h2 {
     font-size: 36px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     color: #000;
     font-weight: 300;
     font-family: "Inter", Sans-serif;
@@ -584,6 +747,10 @@ hr {
     margin-bottom: 35px;
 }
 
+.skills-box two{
+ gap: 90px;
+}
+
 .skill {
     background-color: #fffdfd;
     color: #040404;
@@ -593,7 +760,7 @@ hr {
     width: 220px;
     display: flex;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(179, 102, 223, 0.938);
+    box-shadow: 0 4px 8px #8567FF;
     transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
 }
 
@@ -614,15 +781,19 @@ hr {
 
 .skill:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(214, 122, 223, 0.459);
+    box-shadow: 0 8px 16px #8576FF;
     background-color: #8576FF; /* Purple background on hover */
-    border-color: #ffffff; 
+    border-color: #ffffff;
 
 }
 
-.skill p:hover {
-    color: #ffffff; /* Change text color to white on hover */
+.skill:hover p{
+    color: #fff;
 }
+
+/* .skill p:hover {
+    color: #ffffff; 
+} */
 
 
 /* Services Section */
@@ -675,7 +846,7 @@ hr {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #8843e8;
+    background-color: #8576FF;
 }
 
 .service-header img {
@@ -689,7 +860,7 @@ hr {
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
-    color: #a550d7;
+    color: #8576FF;
     background-color: #ffffff;
     padding: 10px;
     font-family: "Inter", Sans-serif;
@@ -698,14 +869,14 @@ hr {
 
 .service-info {
     padding: 20px;
-    background-color: #8843e8;
+    background-color: #8576FF;
     
 }
 
 .service-info h3 {
     font-size: 20px;
     margin: 0;
-    font-weight: 400;
+    font-weight: 600;
     font-family: "Inter", Sans-serif;
 }
 
@@ -728,7 +899,7 @@ hr {
 
 .service-buttons .btn {
     background-color: #ffffff;
-    color: #000;
+    color: #8576FF;
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: 500;
@@ -736,7 +907,7 @@ hr {
     cursor: pointer;
     text-decoration: none; /* Ensure buttons are styled as links */
     font-family: "Inter", Sans-serif;
-    border: 1px solid #000;
+    border: 1px solid #8576FF;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Add transition for hover effect */
 }
 
@@ -885,7 +1056,7 @@ hr {
 .container h4{
     font-size: 20px;
     text-align: center;
-    font-weight: 400;
+    font-weight: 300;
     /* background-color: #e6e5ff; */
 }
 .container h1{
@@ -953,14 +1124,14 @@ hr {
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    box-shadow: 1px 4px 8px rgba(255, 0, 0, 0);
+    box-shadow: 1px 4px 8px #8576FF;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transition-property: box-shadow;
     transition-property: box-shadow;
   }
   .hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
-    box-shadow: 8px 8px 8px 8px #211951ba;
+    box-shadow: 8px 8px 8px 8px #8576FF;
   }
 .hvr-float-bounce {
     display: inline-block;
@@ -1017,7 +1188,7 @@ hr {
 .hvr-float-bounce:hover, .hvr-float-bounce:focus, .hvr-float-bounce:active {
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px);
-    box-shadow: 0 8px 16px #6b6b6b94;
+    box-shadow: 0 8px 16px #8576FF;
     color: #ffffff;
 }
 .hvr-float-bounce:hover:before, .hvr-float-bounce:focus:before, .hvr-float-bounce:active:before {
@@ -1031,7 +1202,8 @@ hr {
     -webkit-transform: translateY(15px);
     transform: translateY(15px);
 }
-  
+
+
 /* Buzz Out */
 @-webkit-keyframes hvr-buzz-out {
     10% {
@@ -1214,7 +1386,7 @@ hr {
     color: #211951;
     padding: 10px 15px;
     border-radius: 5px;
-    margin: 10px 0;
+    margin-top: 40px;
     border-bottom: 1px solid #211951;
     transition: background 0.3s;
 }
@@ -1225,11 +1397,13 @@ hr {
 
 .faq-answer {
     display: none;
-    background: #8576FF;
-    color: #ffffff;
+    /* background: #8576FF; */
+    color: #8576FF;
+    font-size: 18px;
+    font-weight: 600;
     padding: 10px 15px;
     margin: 10px 0; 
-    animation: fadeIn 0.9s ease; 
+    animation: fadeIn 1s ease-in; 
 }
 
 .contact-form {
@@ -1237,7 +1411,7 @@ hr {
     margin-top: 90px;
     margin-right: 190px;
     margin-bottom: 100px;
-    padding-top: 60px;
+    padding-top: 10px;
     padding-left: 30px; 
     padding-bottom: 50px;
     background-color: #8576FF;
@@ -1246,13 +1420,19 @@ hr {
     font-size: 20px;
 }
 
+.contact-form h2{
+    font-weight: 400;
+    font-size: 25px;
+    padding-bottom: 35px;
+}
+
 .contact-form input,
 .contact-form textarea {
     width: 90%;
     padding: 15px 10px;
     padding-bottom: 5px;
     margin-right: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     background-color: transparent;
     border: none; 
     border-bottom: 1px solid #211951; 
@@ -1271,7 +1451,9 @@ hr {
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
-    border: 2px solid #211951;
+    outline: none;
+    border: none;
+    /* border: 2px solid #211951; */
 }
 .container-contact img{
     top: 40px;
@@ -1279,7 +1461,7 @@ hr {
     height: 40px;
 }
 .contact-form:hover{
-    box-shadow: 0 0 50px #21195184;
+    box-shadow: 0 0 50px #8576FF;
 }
 
 @media (min-width: 1300) {
@@ -1425,6 +1607,7 @@ hr {
 }
 
 
+
 /* Footer section */
 /*wrapper*/
 .main-content {
@@ -1473,7 +1656,7 @@ hr {
 }
 
 .footer-left {
-    flex: 1.1; /* Left content covers 1/4 of the container */
+    /* flex: 1.1; Left content covers 1/4 of the container */
     display: flex; /* Display columns side by side */
     gap: 20px; /* Gap between columns */
 }
@@ -1493,12 +1676,14 @@ hr {
 
 .content {
     flex: 1; /* Take remaining space */
+    padding: 0 10px;
 }
 .content h3 {
-    font-size: 24px; /* Increase font size */
-    font-weight: bold; /* Make text bold */
-    line-height: 1.2; /* Adjust line height */
-    text-wrap: left;
+    line-height: 25px;
+    font-size: 20px; /* Increase font size */
+    font-weight: 500; /* Make text bold */
+    /* line-height: 1.2;  */
+    text-wrap:stable;
 }
 
 .contact-box {
@@ -1543,7 +1728,7 @@ hr {
 .footer-bottom {
     text-align: center;
     padding: 10px;
-    border-top: 1px solid #211951;
+    border-top: 1px solid #8576ff;
 }
 .footer-bottom i{
     color: #8576FF; 
@@ -1680,3 +1865,175 @@ hr {
     }
 }
 
+:root {
+    --primary-color: #8567FF;
+    --secondary-color: #e8e8e8;
+    --text-dark: #0f172a;
+    --text-light: #94a3b8;
+    --white: #ffffff;
+  }
+  
+  /* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--secondary-color);
+  } */
+  
+  .section__container {
+    max-width: 80%;
+    margin: auto;
+    padding: 5rem 1rem;
+    text-align: center;
+  }
+  
+  .section__container h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  
+  .section__container h1 {
+    position: relative;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--text-dark);
+  }
+  
+  .section__container h1::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: 4rem;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 5rem;
+    background-color: var(--primary-color);
+  }
+  
+  .section__carousel {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  .section__carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(40vw * 4); /* Adjust this if you add more cards */
+  }
+  
+  .section__card {
+    margin: 1rem;
+    flex: 0 0 30vw;
+    box-sizing: border-box;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 5rem 2rem 2rem;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+  
+  .section__card::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+    z-index: -1;
+    transition: 0.5s;
+  }
+  
+  .section__card span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    font-size: 3rem;
+    color: var(--white);
+  }
+  
+  .section__card h4 {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: 0.3s;
+  }
+  
+  .section__card p {
+    margin-bottom: 2rem;
+    color: var(--text-light);
+    transition: 0.3s;
+  }
+  
+  .section__card img {
+    margin-bottom: 1rem;
+    max-width: 100px;
+    border-radius: 100%;
+    border: 2px solid var(--primary-color);
+    transition: 0.3s;
+  }
+  
+  .section__card h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: 0.3s;
+  }
+  
+  .section__card h6 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-light);
+    transition: 0.3s;
+  }
+  
+  .section__card:hover::before {
+    width: 400%;
+  }
+  
+  .section__card:hover :is(h4, h5) {
+    color: var(--white);
+  }
+  
+  .section__card:hover :is(p, h6) {
+    color: var(--secondary-color);
+  }
+  
+  .section__card:hover img {
+    border-color: var(--white);
+  }
+  
+  .carousel__dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .carousel__dots .dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .carousel__dots .dot.active {
+    background-color: var(--text-dark);
+  }

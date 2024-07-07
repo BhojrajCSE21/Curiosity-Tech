@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
+    <title>CuriosityTech | Courses</title>
     <link rel="stylesheet" href="../Assets/css/courses.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
 </head>
 <body>
     <!-- Navbar Section -->
-<nav class="navbar">
+    <nav class="navbar" style="
+    height: 115px;">
     <div class="logo">
-        <a href="#"><img src="/Assets/images/IMG-20240621-WA0001.jpg" alt="Logo"></a>
+        <a href="home.html"><img src="../Assets/images/logo-trans.png" alt="Logo"></a>
     </div>
     <div class="hamburger">
         <span></span>
@@ -19,28 +21,41 @@
         <span></span>
     </div>
     <ul class="nav-links">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li class="dropdown">
+        <li data-aos="fade-right" data-aos-offset="120" data-aos-delay="100"><a href="home.html">Home</a></li>
+        <li data-aos="fade-right" data-aos-offset="120" data-aos-delay="200"><a href="about.html">About</a></li>
+        <li class="dropdown" data-aos="fade-right" data-aos-offset="120" data-aos-delay="300">
             <a href="courses.html">Courses</a>
             <ul class="dropdown-menu">
                 <li><a href="courses.html">Web Development</a></li>
-                <li><a href="courses.html">App Development</a></li>
-                <li><a href="courses.html">Digital Marketing</a></li>
-                <li><a href="courses.html">Website Maintenance</a></li>
+                <li><a href="courses.html">UI/UX Design</a></li>
+                <li><a href="courses.html">Data Analytics</a></li>
+                <li><a href="courses.html">Machine Learning</a></li>
+                <!-- <li><a href="courses.html">More</a></li> -->
             </ul>
         </li>
-        <li class="dropdown">
-            <a href="#">Blogs</a>
+        <li class="dropdown" data-aos="fade-right" data-aos-offset="120" data-aos-delay="400">
+            <a href="./test.html">Blogs</a>
         </li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li data-aos="fade-right" data-aos-offset="120" data-aos-delay="500"><a href="contact.html" >Contact Us</a></li>
     </ul>
 </nav>
     <header>
+        <div class="ripple-background">
+            <div class="circle xxlarge shade1"></div>
+            <div class="circle xlarge shade2"></div>
+            <div class="circle large shade3"></div>
+            <div class="circle mediun shade4"></div> <!-- Note: "mediun" appears to be a typo, assuming it should be "medium" -->
+            <div class="circle small shade5"></div>
+          </div>
         <section class="courses">
-        <h1>Courses<img src="/Assets/images/courselo.png" width="120px" height="100px"></h1>
-        <p style="color: #211951;">Comprehensive Website Services to Ignite Your Online Success.<br>
-           Empower Your Business with Powerful Online Services from our Website.</p>
+            <div class="hero-text">
+                <h1>Explore Our Courses</h1>
+                <p style="color: #211951;">Unlock your potential with our diverse range of courses in web development, app development, cloud computing, and AI/ML. Whether you prefer online or offline learning, our expert-led programs are designed to equip you with the skills needed to thrive in today's tech-driven world.</p>
+            </div>
+            <div>
+                
+                <img src="/Assets/images/Data extraction-bro.svg" width="120px" height="100px">
+                </div>
     
 </section>
 </header>
@@ -66,7 +81,7 @@
         <!-- 2 -->
         <div class="service-card">
             <div class="service-header">
-                <img src="/Assets/images/fullst ack logo.png" alt="Fullstack Developer">
+                <img src="/Assets/images/fullstack logo.png" alt="Fullstack Developer">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScpvVsPHAzgOyN5DeqkTIaChNKcisfPH9ihIiSC5Q8MLWzg6A/viewform"><span>↑</span></a>
             </div>
             <div class="service-info">
@@ -207,7 +222,7 @@
             </div>
         </div>
         <!-- 13 -->
-        <div class="service-card">
+        <!-- <div class="service-card">
             <div class="service-header">
                 <img src="/Assets/images/robotics logo.png" alt="Robotics">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScpvVsPHAzgOyN5DeqkTIaChNKcisfPH9ihIiSC5Q8MLWzg6A/viewform"><span>↑</span></a>
@@ -218,7 +233,7 @@
             <div class="service-footer">
                 <img src="/Assets/images/robo.png" alt="Robotics Large">
             </div>
-        </div>
+        </div> -->
         <!-- 14 -->
         <div class="service-card">
             <div class="service-header">
@@ -282,11 +297,19 @@
     <section class="bar">
         <div class="bar-content">
             <div class="bar-flex-container">
-                <p><img src="/Assets/images/Vector-2.png" alt="vector" class="vector"> Learn Anything </p>
-                <p><img src="/Assets/images/Vector-2.png" alt="vector" class="vector"> Learn Together </p>
-                <p><img src="/Assets/images/Vector-2.png" alt="vector" class="vector"> Bright Mind & Idea </p>
-                <p><img src="/Assets/images/Vector-2.png" alt="vector" class="vector"> Customer Preference</p>
-                <p><img src="/Assets/images/Vector-2.png" alt="vector" class="vector"> Online Course</p>
+                <p>
+                    <!-- <img src="/Assets/images/Vector-2.png" alt="vector" class="vector">  -->
+                    Learn Anything </p>
+                <p>
+                    <!-- <img src="/Assets/images/Vector-2.png" alt="vector" class="vector"> -->
+                     Learn Together </p>
+                <p>
+                    <!-- <img src="/Assets/images/Vector-2.png" alt="vector" class="vector">  -->
+                    Bright Mind & Idea </p>
+                <!-- <p><img src="/Assets/images/Vector-2.png" alt="vector" class="vector"> Customer Preference</p> -->
+                <p>
+                    <!-- <img src="/Assets/images/Vector-2.png" alt="vector" class="vector"> -->
+                     Online Course</p>
             </div>
            
         </div>
@@ -298,24 +321,24 @@
 <h2>Career Building Steps</h2>
 <p>Career building involves assessing strengths, setting goals, developing skills, gaining experience, networking, planning, staying adaptable, and establishing a positive online presence for success.</p></center></div>
          <div class="timeline">
-            <div class="container left">
+            <div class="container left container-left">
                 <div class="content">
-                    <h2 style="color: #F5F7F8;">Step 01</h2>
-                    <h2>Training  <img src="/Assets/images/learning.png" width="20px" height="20px"></h2>
-                    <p>Training provides students with the essential knowledge and skills needed to understand and excel in the course material.</p>
+                    <h3 style="color: #211951;">Step 01</h3>
+                    <h1  style="color: #8576FF;">Training  <img src="/Assets/images/learning.png" width="40px" height="40px"></h1>
+                    <p>Training provides student's with the essential knowledge and skills needed to understand and excel in the course material.</p>
                 </div>
             </div>
-            <div class="container right">
+            <div class="container right container-right">
                 <div class="content">
-                    <h2 style="color: #F5F7F8;">Step 02</h2>
-                    <h2>Testing  <img src="/Assets/images/test.png" width="20px" height="20px"></h2>
-                    <p>Testing evaluates the students' understanding of the course material and their ability to apply the acquired knowledge and skills effectively.</p>
+                    <h3 style="color: #211951;">Step 02</h3>
+                    <h1 style="color: #8576FF;">Evaluation  <img src="/Assets/images/test.png" width="40px" height="40px"></h1>
+                    <p>Testing evaluates the student's understanding of the course material and their ability to apply the acquired knowledge and skills effectively.</p>
                 </div>
             </div>
-            <div class="container left">
+            <div class="container left container-left">
                 <div class="content">
-                    <h2 style="color: #F5F7F8;">Step 03</h2>
-                    <h2>Certification  <img src="/Assets/images/certificate.png" width="20px" height="20px"></h2>
+                    <h3 style="color: #211951;">Step 03</h3>
+                    <h1  style="color: #8576FF;">Certification  <img src="/Assets/images/certificate.png" width="40px" height="40px"></h1>
                     <p>It enhances the student's professional credibility, providing tangible proof of their expertise and competence in the field.</p>
                 </div>
             </div>
@@ -327,9 +350,9 @@
                     <div class="footer-right">
                         <div class="footer-content">
                          <div class="footer-img">
-                            <img src="/Assets/images/IMG-20240621-WA0001.jpg" alt="logo"></div>
-                            <div class="content1">
-                            <h3>Embark on a journey of endless possibilities with Curiosity Tech Academy. Uncover your potential, embrace innovation, and shape your future with the power of technology</h3>
+                            <img src="../Assets/images/IMG-20240621-WA0001.jpg" alt="logo"></div>
+                            <div class="content">
+                            <h3>Embark on a journey of endless possibilities with Curiosity Tech Academy. Uncover your potential, embrace innovation, and <br>shape your future with the power of technology.</h3>
                         </div>
                     </div>
                             <div class="contact-box1">
@@ -342,7 +365,7 @@
                                 </div>
                                 </div>
                                 <div class="contact-item">
-                                    <span>Address:</span> 84, Pandurang Gawande Layout, Khamla, Nagpur-25 (IN)
+                                    <span>Address:</span> 1st Floor, Plot No 81, Wardha Rd, Gajanan Nagar, Nagpur
                                 </div>
                             </div>
                         </div>
@@ -351,19 +374,20 @@
                         <div class="footer-column">
                             <h3>Quick Links</h3>
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="./home.html">Home</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./courses.html">Courses</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
                             </ul>
                         </div>
                         <div class="footer-column">
-                            <h3> Popular Courses</h3>
+                            <h3>Popular Courses</h3>
                             <ul>
-                                <li><a href="#">UI UX / Web Page Design</a></li>
-                                <li><a href="#">Android Application</a></li>
-                                <li><a href="#">Data Science Research</a></li>
-                                <li><a href="#">Data Science Research</a></li>
+                                <li><a href="./courses.html">UI UX / Web Page Design</a></li>
+                                <li><a href="./courses.html">Android Application</a></li>
+                                <li><a href="./courses.html">Database Management</a></li>
+                                <li><a href="./courses.html">Data Analytics</a></li>
+                                <li><a href="./courses.html">AI/ML</a></li>
                             </ul>
                         </div>
                         <div class="footer-divider"></div>
@@ -381,5 +405,9 @@
         
 <script src="/Assets/js/nav.js"></script>
 <script src="/Assets/js/script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

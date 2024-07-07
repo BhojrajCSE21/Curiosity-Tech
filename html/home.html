@@ -15,9 +15,10 @@
 </head>
 <body>
 <!-- Navbar Section -->
-<nav class="navbar" >
+<nav class="navbar" style="
+    height: 115px;">
     <div class="logo">
-        <a href="home.html"><img src="../Assets/images/IMG-20240621-WA0001.jpg" alt="Logo"></a>
+        <a href="home.html"><img src="../Assets/images/logo-trans.png" alt="Logo"></a>
     </div>
     <div class="hamburger">
         <span></span>
@@ -31,13 +32,14 @@
             <a href="courses.html">Courses</a>
             <ul class="dropdown-menu">
                 <li><a href="courses.html">Web Development</a></li>
-                <li><a href="courses.html">App Development</a></li>
-                <li><a href="courses.html">Digital Marketing</a></li>
-                <li><a href="courses.html">Website Maintenance</a></li>
+                <li><a href="courses.html">UI/UX Design</a></li>
+                <li><a href="courses.html">Data Analytics</a></li>
+                <li><a href="courses.html">Machine Learning</a></li>
+                <!-- <li><a href="courses.html">More</a></li> -->
             </ul>
         </li>
         <li class="dropdown" data-aos="fade-right" data-aos-offset="120" data-aos-delay="400">
-            <a href="#">Blogs</a>
+            <a href="./test.html">Blogs</a>
         </li>
         <li data-aos="fade-right" data-aos-offset="120" data-aos-delay="500"><a href="contact.html" >Contact Us</a></li>
     </ul>
@@ -45,6 +47,13 @@
 
 
 <!-- Hero Section -->
+<div class="ripple-background">
+    <div class="circle xxlarge shade1"></div>
+    <div class="circle xlarge shade2"></div>
+    <div class="circle large shade3"></div>
+    <div class="circle mediun shade4"></div> <!-- Note: "mediun" appears to be a typo, assuming it should be "medium" -->
+    <div class="circle small shade5"></div>
+  </div>
 <section class="hero">
     <div class="hero-bg"></div> <!-- New div for background image -->
     <div class="hero-content">
@@ -56,16 +65,15 @@
         <div class="hero-main">
             <div class="hero-text-buttons">
                 <div class="hero-paragraph">
-                    <p>Your Gateway To A World Of Innovation And Knowledge! <br>We Believe That The Future Belongs To Those Who Continuously <br> Embrace And Master The Latest <br>Advancements In Technology
-                        Enroll Now</p>
+                    <p>Your Gateway To A World Of Innovation And Knowledge! <br>We Believe That The Future Belongs To Those Who Continuously <br> Embrace And Master The Latest Advancements In Technology.</p>
                 </div><hr>
                 <div class="hero-buttons">
                     <a href="#" class="btn">Get Started</a>
-                    <a href="#" class="btn">Explore Now</a>
+                    <a href="#" class="btn" id="btn-explore">Explore Now</a>
                 </div>
             </div>
             <div class="hero-image-explore">
-                <img src="../Assets/images/banner_home02-DD9Q8T2.jpg" alt="Right of Paragraph Image" class="paragraph-img">
+                <img src="../Assets/images/Webinar-pana.svg" alt="Right of Paragraph Image" class="paragraph-img">
                 <!-- <div class="explore-button">
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLScpvVsPHAzgOyN5DeqkTIaChNKcisfPH9ihIiSC5Q8MLWzg6A/viewform" target="_blank" id="hero-explore" class="btn">Explore More</a>
                 </div> -->
@@ -116,11 +124,11 @@
         </div>
         <div class="skill">
             <img src="../Assets/images/html-5.png" alt="HTML">
-            <p>HTML</p>
+            <p>HTML5</p>
         </div>
         <div class="skill">
             <img src="../Assets/images/css-3.png" alt="CSS">
-            <p>CSS</p>
+            <p>CSS3</p>
         </div>
         <div class="skill">
             <img src="../Assets/images/js.png" alt="JavaScript">
@@ -140,13 +148,10 @@
 
     <div class="skills-box">
         <div class="skill">
-            <img src="../Assets/images/wordpress.png" alt="PHP">
+            <img src="../Assets/images/php.png" alt="PHP">
             <p>PHP</p>
         </div>
-        <div class="skill">
-            <img src="../Assets/images/Frame-1-2.png" alt="Node.js">
-            <p>Node.js</p>
-        </div>
+       
         <div class="skill">
             <img src="../Assets/images/Frame-2-1.png" alt="Sass">
             <p>Sass</p>
@@ -158,12 +163,8 @@
     </div>
     <div class="skills-box">
         <div class="skill">
-            <img src="../Assets/images/shopify.png" alt="Shopify">
-            <p>Shopify</p>
-        </div>
-        <div class="skill">
-            <img src="../Assets/images/Frame-4.png" alt="Vue.js">
-            <p>Vue.js</p>
+            <img src="../Assets/images/Frame-1-2.png" alt="Node.js">
+            <p>Node.js</p>
         </div>
     </div>
     
@@ -260,27 +261,36 @@
     <section class="bar">
         <div class="bar-content">
             <div class="bar-flex-container">
-                <p><img src="../Assets/images/Vector-2.png" alt="vector" class="vector"> Creative People </p>
-                <p><img src="../Assets/images/Vector-2.png" alt="vector" class="vector"> Good Reviews </p>
-                <p><img src="../Assets/images/Vector-2.png" alt="vector" class="vector"> Awesome Design </p>
-                <p><img src="../Assets/images/Vector-2.png" alt="vector" class="vector"> Fast Delivery</p>
+                <p>
+                    <!-- <img src="../Assets/images/Vector-2.png" alt="vector" class="vector">  -->
+                    Skilled Trainers </p>
+                <p>
+                    <!-- <img src="../Assets/images/Vector-2.png" alt="vector" class="vector">  -->
+                    Flexible Schedule </p>
+                <p>
+                    <!-- <img src="../Assets/images/Vector-2.png" alt="vector" class="vector"> -->
+                     Practical Projects </p>
+                <p>
+                    <!-- <img src="../Assets/images/Vector-2.png" alt="vector" class="vector"> -->
+                     Career Growth</p>
             </div>
            
         </div>
     </section>
 
     <!-- Contact Section -->
-    <div class="container">
+    <!-- <div class="container">
         <h2>Testimonial</h2>
-        <h1 style="text-align: center" >What our clients say about us</h1>
-        <h4>Here is why our students have to say about working with CuriosityTech</h4>
+        <h1 style="text-align: center" >What our students say about us</h1>
+        <h4>Here is what our students have to say about working with CuriosityTech</h4>
         <div class="testimonials" id="testimonials">
-            <div class="testimonial-card hvr-float-bounce" data-aos="flip-left" data-aos-offset="20", data-aos-delay="500" data-aos-anchor-placement="top-center" data-aos-once="true">
-                <div class="testimonial-content"> 
-                    <img src="../Assets/images/sagar.jpg" alt="Sagar">
-                    <div class="text-content">
-                        <p><strong>CuriosityTech provided me with the skills I needed to advance in my career. The training was thorough and practical. Highly recommend!</strong></p>
-                        <p>~ Sagar Bokade</p>
+            <div class="testimonial-card">
+                <p class="testimonial-text">" From the initial consultation to ongoing support and optimization, their team has been responsive, proactive, and a pleasure to work with. "</p>
+                <div class="author-info">
+                    <img src="author-photo.jpg" alt="Michael Brown" class="author-photo">
+                    <div class="author-details">
+                        <h3 class="author-name">Michael Brown</h3>
+                        <p class="author-title">Founder</p>
                     </div>
                 </div>
             </div>
@@ -321,31 +331,157 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+
+
+
+
+    <!-- TESTIMONIALS -->
+
+
+    <section class="section__container">
+        <h2>Testimonials</h2>
+        <h1>What our student's say</h1>
+        <div class="section__carousel">
+          <div class="section__carousel-inner">
+            <div class="section__card">
+              <div>
+                <img src="../Assets/images/user-3.jpg" alt="user" />
+                <h5>Allan Collins</h5>
+                <h6>Managing Director</h6>
+              </div>
+              <div>
+                <span><i class="ri-double-quotes-l"></i></span>
+                <h4>Love the simplicity</h4>
+                <p>
+                  They understood our brand and created a stunning website design.
+                  Professional, responsive, and on-time delivery. Highly
+                  recommended!
+                </p>
+              </div>
+            </div>
+  
+            <div class="section__card">
+              <div>
+                <img src="../Assets/images/user-2.jpg" alt="user" />
+                <h5>Tanya Grant</h5>
+                <h6>CEO & Founder</h6>
+              </div>
+              <div>
+                <span><i class="ri-double-quotes-l"></i></span>
+                <h4>Excellent Designs</h4>
+                <p>
+                  Efficient, reliable, and results-oriented. Visually appealing
+                  website, improved online visibility. Highly recommended!
+                </p>
+              </div>
+            </div>
+  
+            <div class="section__card">
+              <div>
+                <img src="../Assets/images/user-1.jpg" alt="user" />
+                <h5>Clay Washington</h5>
+                <h6>Fashion Designer</h6>
+              </div>
+              <div>
+                <span><i class="ri-double-quotes-l"></i></span>
+                <h4>Efficient and Reliable</h4>
+                <p>
+                  Best decision we made. Stunning website, exceptional support.
+                  Always available and prompt issue resolution. Hassle-free
+                  experience!
+                </p>
+              </div>
+            </div>
+  
+            <div class="section__card">
+              <div>
+                <img src="../Assets/images/user-1.jpg" alt="user" />
+                <h5>Allan Collins</h5>
+                <h6>Managing Director</h6>
+              </div>
+              <div>
+                <span><i class="ri-double-quotes-l"></i></span>
+                <h4>Love the simplicity</h4>
+                <p>
+                  They understood our brand and created a stunning website design.
+                  Professional, responsive, and on-time delivery. Highly
+                  recommended!
+                </p>
+              </div>
+            </div>
+  
+            <div class="section__card">
+              <div>
+                <img src="../Assets/images/user-2.jpg" alt="user" />
+                <h5>Tanya Grant</h5>
+                <h6>CEO & Founder</h6>
+              </div>
+              <div>
+                <span><i class="ri-double-quotes-l"></i></span>
+                <h4>Excellent Designs</h4>
+                <p>
+                  Efficient, reliable, and results-oriented. Visually appealing
+                  website, improved online visibility. Highly recommended!
+                </p>
+              </div>
+            </div>
+  
+            <div class="section__card">
+              <div>
+                <img src="../Assets/images/user-3.jpg" alt="user" />
+                <h5>Clay Washington</h5>
+                <h6>Fashion Designer</h6>
+              </div>
+              <div>
+                <span><i class="ri-double-quotes-l"></i></span>
+                <h4>Efficient and Reliable</h4>
+                <p>
+                  Best decision we made. Stunning website, exceptional support.
+                  Always available and prompt issue resolution. Hassle-free
+                  experience!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel__dots">
+          <span class="dot" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+          <span class="dot" data-index="3"></span>
+        </div>
+      </section>
+
+
+
+
     <div class="container-contact">
         <div class="faq-section-container" data-aos="zoom-out-right" data-aos-offset="300"  data-aos-easing="ease-in-sine" data-aos-once="true">
             <div class="faq-section">
                 <h2><img src="../Assets/images/arrow-removebg-preview.png">What we do?</h2>
-                <h3>As a website designer we provide affordable website design services to our clients all over the world with best services. Our services include; small business website design services.</h3>
+                <h3>At Curiosity Tech, we provide expert training in web development, app development, cloud computing, and AI/ML, equipping students with essential skills for a successful tech career. Join us to transform your potential into expertise.
+                </h3>
             </div>
             <div class="faq-section">
-                <div class="faq-question"> Define Goals and Requirements</div>
-                <div class="faq-answer">At Grswt, we understand the purpose of the website, its target audience, and the specific goals it needs to achieve. Determine the features, functionality, and content that the website will require for ecommerce website design services.</div>
+                <div class="faq-question"> Define Goals and Requirements 👇</div>
+                <div class="faq-answer">At CuriosityTech, we understand the purpose of the website, its target audience, and the specific goals it needs to achieve. Determine the features, functionality, and content that the project will require.</div>
             </div>
             <div class="faq-section">
-                <div class="faq-question"> Research and Planning</div>
-                <div class="faq-answer">Conduct market research to gather insights about the target audience, competitors, and industry trends. Create a sitemap to outline the structure and hierarchy of the website’s pages. Consider the user journey and how visitors will navigate through the site.</div>
+                <div class="faq-question"> Research and Planning 👇</div>
+                <div class="faq-answer">Conduct market research to gather insights about the target audience, competitors, and industry trends. Create a sitemap to outline the structure and hierarchy of the project. Consider the user journey and how users will navigate through the project.</div>
             </div>
             <div class="faq-section">
-                <div class="faq-question"> User Experience (UX) Design</div>
+                <div class="faq-question"> User Experience (UX) Design 👇</div>
                 <div class="faq-answer">Focus on designing a user-friendly experience by creating wireframes or prototypes. This involves creating the layout, structure, and functionality of each page, ensuring intuitive navigation and easy access to information.</div>
             </div>
             <div class="faq-section">
-                <div class="faq-question"> Testing and Optimization</div>
+                <div class="faq-question"> Testing and Optimization 👇</div>
                 <div class="faq-answer">Conduct thorough testing to identify and fix any issues, such as broken links, browser compatibility problems, or usability concerns. Optimize the website’s performance, including page load times and mobile responsiveness.</div>
             </div>
             <div class="faq-section">
-                <div class="faq-question"> Launch and Deployment</div>
+                <div class="faq-question"> Launch and Deployment 👇</div>
                 <div class="faq-answer">Deploy the website on a web hosting platform or server. Ensure proper domain and hosting setup, configure security measures (such as SSL certificates), and monitor the website’s performance.</div>
             </div>
         </div>
@@ -367,7 +503,7 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
                 
-                <button" type="submit">Submit</button>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </div>
@@ -382,7 +518,7 @@
                  <div class="footer-img">
                     <img src="../Assets/images/IMG-20240621-WA0001.jpg" alt="logo"></div>
                     <div class="content">
-                    <h3>Embark on a journey of endless possibilities with Curiosity Tech Academy. Uncover your potential, embrace innovation, and shape your future with the power of technology</h3>
+                    <h3>Embark on a journey of endless possibilities with Curiosity Tech Academy. Uncover your potential, embrace innovation, and <br>shape your future with the power of technology.</h3>
                 </div>
             </div>
                     <div class="contact-box1">
@@ -395,7 +531,7 @@
                         </div>
                         </div>
                         <div class="contact-item">
-                            <span>Address:</span> 84, Pandurang Gawande Layout, Khamla, Nagpur-25 (IN)
+                            <span>Address:</span> 1st Floor, Plot No 81, Wardha Rd, Gajanan Nagar, Nagpur.
                         </div>
                     </div>
                 </div>
@@ -404,19 +540,20 @@
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./courses.html">Courses</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Popular Courses</h3>
                     <ul>
-                        <li><a href="#">UI UX / Web Page Design</a></li>
-                        <li><a href="#">Android Application</a></li>
-                        <li><a href="#">Data Science Research</a></li>
-                        <li><a href="#">Data Science Research</a></li>
+                        <li><a href="./courses.html">UI UX / Web Page Design</a></li>
+                        <li><a href="./courses.html">Android Application</a></li>
+                        <li><a href="./courses.html">Database Management</a></li>
+                        <li><a href="./courses.html">Data Analytics</a></li>
+                        <li><a href="./courses.html">AI/ML</a></li>
                     </ul>
                 </div>
                 <div class="footer-divider"></div>
@@ -438,6 +575,8 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script>
+        </script>
+    <script src="../Assets/js/updatedTestimonials.js"></script>
+    <script src="../Assets//js/testomonial.js"></script>
 </body>
 </html>
